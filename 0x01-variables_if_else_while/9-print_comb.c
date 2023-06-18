@@ -9,14 +9,17 @@ int main(void)
 {
 	int n;
 
-	putchar(48);
-
-	for (n = 49; n < 58; n++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(44);
-		putchar(32);
 		putchar(n);
+
+		if ( n == 57)
+			break;
+
+		putchar(',');
+		putchar(' ');
 	}
 
+	putchar('\n');
 	return (0);
 }
