@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (n = 48; n < 58; n++)
 		{
-			if (m == 49 && n == 48)
+			if (m == n || n == 48 || m == 57)
 			{
 				continue;
 				m++;
@@ -23,7 +23,7 @@ int main(void)
 			putchar(m);
 			putchar(n);
 
-			if (m == 57 && n == 57)
+			if (m == 56 && n == 57)
 				break;
 
 			putchar(',');
