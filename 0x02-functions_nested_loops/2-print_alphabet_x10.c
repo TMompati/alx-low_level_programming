@@ -1,21 +1,24 @@
 #include "main.h"
 
 /**
- *print_alphabet - Prints the alphatbet in lowercase
+ *print_alphabet_x10 - Prints the alphatbet in lowercase ten times
  *
  * Return: void
  */
 void print_alphabet_x10(void)
 {
-	int m, n = 97;
+	int m = 0, n = 97;
 
-	for (m = 0; m < 10; m++)
+	while (m < 10)
 	{
 		while (n < 123)
 		{
 			_putchar(n);
 			n++;
 		}
+
+		m++;
 	}
+
 	_putchar(10);
 }
