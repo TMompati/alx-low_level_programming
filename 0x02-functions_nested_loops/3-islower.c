@@ -12,9 +12,8 @@ int _islower(int c)
 
 	for (n = 97; n < 123; n++)
 	{
-		if (_putchar(c) == _putchar(n))
+		if (c == n)
 			return (1);
-		else
-			return (0);
 	}
+	return (0);
 }
