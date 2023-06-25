@@ -17,7 +17,7 @@ void print_line(int n)
 			_putchar(95);
 		}
 
-		m++;	
+		m++;
 	}
 	_putchar(10);
 }
